@@ -74,4 +74,49 @@ fun FormDataDiri(modifier: Modifier){
             }
         )
 
+        Divider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(R.dimen.padding_medium)
+            ),
+            thickness = dimensionResource(R.dimen.padding_tipis),
+            color = Color.DarkGray
+        )
+
+        Button(
+            modifier = Modifier.fillMaxWidth(1f),
+            // The button is enabled when the user makes a selection
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+            }
+        ) {
+            Text(stringResource(R.string.submit))
+        }
+
+        Divider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(R.dimen.padding_medium)
+            ),
+            thickness = dimensionResource(R.dimen.padding_tipis),
+            color = Color.DarkGray
+        )
+
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black),
+            modifier = Modifier
+                .height(100.dp)
+                .width(300.dp)
+        ) {
+            Column(modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp)) {
+                Text(text = "Nama    : $nama", color = Color.White)
+                Text(text = "Gender  : $jenis", color = Color.White)
+                Text(text = "Alamat  : $alamat", color = Color.White)
+            }
+        }
+    }
 }
