@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Activity 4 - User Input</string>
+    <string name="submit">Submit</string>
 </resources>
