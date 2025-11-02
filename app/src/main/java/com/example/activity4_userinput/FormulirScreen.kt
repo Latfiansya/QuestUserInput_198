@@ -88,4 +88,12 @@ fun TugasForm() {
                         onSelect = { jenisKelamin = it }
                     )
                     Spacer(Modifier.height(8.dp))
+
+                    SectionLabel("STATUS PERKAWINAN")
+                    RadioGroup(
+                        options = listOf("Janda", "Lajang", "Duda"),
+                        selected = status,
+                        onSelect = { status = it }
+                    )
+                    Spacer(Modifier.height(8.dp))
                 }}}}}
