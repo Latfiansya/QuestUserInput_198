@@ -40,4 +40,17 @@ fun TugasForm() {
                 .background(headerColor)
         )
 
-    }}
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 16.dp)
+        ) {
+            Spacer(Modifier.height(50.dp))
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontSize = 30.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(top = 8.dp)
+            )
+        }
