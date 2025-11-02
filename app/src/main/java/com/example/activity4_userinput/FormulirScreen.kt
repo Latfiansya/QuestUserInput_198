@@ -25,4 +25,10 @@ import androidx.compose.ui.unit.sp
 fun TugasForm() {
     val headerColor: Color = Color(0xFF5B2EFF)
 
+    // STATE UI
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jenisKelamin by remember { mutableStateOf("Laki-laki") }
+    var status by remember { mutableStateOf("Janda") }
+
 }
