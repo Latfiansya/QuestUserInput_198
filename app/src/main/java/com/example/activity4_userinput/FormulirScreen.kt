@@ -68,4 +68,16 @@ fun TugasForm() {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(20.dp)
-                )
+                ) {
+
+                    SectionLabel("NAMA LENGKAP")
+                    OutlinedTextField(
+                        value = nama,
+                        onValueChange = { nama = it },
+                        placeholder = { Text("Isian nama lengkap") },
+                        singleLine = true,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 8.dp, bottom = 16.dp)
+                    )
+                }}}}}
