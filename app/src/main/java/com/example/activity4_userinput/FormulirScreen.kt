@@ -138,3 +138,29 @@ private fun SectionLabel(text: String) {
         )
     )
 }
+
+@Composable
+private fun RadioGroup(
+    options: List<String>,
+    selected: String,
+    onSelect: (String) -> Unit
+) {
+    Column(
+        modifier = Modifier.padding(top = 8.dp, bottom = 8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        options.forEach { opt ->
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                RadioButton(
+                    selected = selected == opt,
+                    onClick = { onSelect(opt) }
+                )
+                Text(opt, modifier = Modifier.padding(start = 8.dp))
+            }
+        }
+    }
+}
+
