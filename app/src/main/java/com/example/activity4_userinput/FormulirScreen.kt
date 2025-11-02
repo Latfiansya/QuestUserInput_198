@@ -108,4 +108,22 @@ fun TugasForm() {
                     )
 
                     Spacer(Modifier.height(20.dp))
-                }}}}}
+
+                    Button(
+                        onClick = {},
+                        shape = RoundedCornerShape(28.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(48.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFF5B2EFF),
+                            contentColor = Color.White
+                        )
+                    ) {
+                        Text("Submit", fontWeight = FontWeight.SemiBold)
+                    }
+                }
+            }
+        }
+    }
+}
