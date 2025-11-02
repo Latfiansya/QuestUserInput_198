@@ -80,4 +80,12 @@ fun TugasForm() {
                             .fillMaxWidth()
                             .padding(top = 8.dp, bottom = 16.dp)
                     )
+
+                    SectionLabel("JENIS KELAMIN")
+                    RadioGroup(
+                        options = listOf("Laki-laki", "Perempuan"),
+                        selected = jenisKelamin,
+                        onSelect = { jenisKelamin = it }
+                    )
+                    Spacer(Modifier.height(8.dp))
                 }}}}}
