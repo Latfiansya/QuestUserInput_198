@@ -56,4 +56,12 @@ fun TugasForm() {
 
             Spacer(Modifier.height(20.dp))
 
-        }
+            //Card
+            Card(
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 8.dp)
+                    .shadow(elevation = 6.dp, shape = RoundedCornerShape(24.dp))
+            ) {
+            }
