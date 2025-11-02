@@ -91,7 +91,7 @@ fun TugasForm() {
 
                     SectionLabel("STATUS PERKAWINAN")
                     RadioGroup(
-                        options = listOf("Janda", "Lajang", "Duda", "Kawin"),
+                        options = listOf("Lajang", "Kawin", "Janda", "Duda"),
                         selected = status,
                         onSelect = { status = it }
                     )
