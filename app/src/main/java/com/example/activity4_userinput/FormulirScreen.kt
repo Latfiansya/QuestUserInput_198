@@ -127,3 +127,14 @@ fun TugasForm() {
         }
     }
 }
+
+@Composable
+private fun SectionLabel(text: String) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.labelLarge.copy(
+            color = Color(0xFF757575),
+            letterSpacing = 0.5.sp
+        )
+    )
+}
