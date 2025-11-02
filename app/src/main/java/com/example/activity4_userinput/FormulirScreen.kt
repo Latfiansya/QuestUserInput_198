@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TugasForm() {
-    val headerColor: Color = Color(0xFF5B2EFF)
+    val headerColor : Color = Color(0xFF5B2EFF)
 
     // STATE UI
     var nama by remember { mutableStateOf("") }
@@ -31,4 +31,13 @@ fun TugasForm() {
     var jenisKelamin by remember { mutableStateOf("Laki-laki") }
     var status by remember { mutableStateOf("Janda") }
 
-}
+    Box(modifier = Modifier.fillMaxSize()) {
+        // Header ungu
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(105.dp)
+                .background(headerColor)
+        )
+
+    }}
