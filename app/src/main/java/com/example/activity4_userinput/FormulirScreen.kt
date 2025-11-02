@@ -64,4 +64,8 @@ fun TugasForm() {
                     .padding(top = 8.dp)
                     .shadow(elevation = 6.dp, shape = RoundedCornerShape(24.dp))
             ) {
-            }
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(20.dp)
+                )
