@@ -23,4 +23,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TugasForm() {
+    val headerColor: Color = Color(0xFF5B2EFF)
+
 }
