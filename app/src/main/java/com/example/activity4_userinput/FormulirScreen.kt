@@ -53,4 +53,7 @@ fun TugasForm() {
                 fontWeight = FontWeight.SemiBold,
                 modifier = Modifier.padding(top = 8.dp)
             )
+
+            Spacer(Modifier.height(20.dp))
+
         }
